@@ -1,4 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+import { withPigment } from '@pigment-css/nextjs-plugin';
 
-export default nextConfig;
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  compiler: {
+    styledComponents: true
+  }
+};
+
+export default withPigment(nextConfig);
