@@ -1,5 +1,5 @@
 import { withPigment } from '@pigment-css/nextjs-plugin';
-
+import { withYak } from 'next-yak/withYak';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -8,4 +8,4 @@ const nextConfig = {
   }
 };
 
-export default withPigment(nextConfig);
+export default withYak(withPigment(nextConfig));
