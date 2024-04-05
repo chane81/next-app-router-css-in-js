@@ -30,7 +30,6 @@ const RoundedBox = styled.div<{
   $isBig?: boolean;
   $isMy?: boolean;
 }>`
-  ${mainClass};
   color: red;
   border: 1px solid skyblue;
   border-radius: 8px;
